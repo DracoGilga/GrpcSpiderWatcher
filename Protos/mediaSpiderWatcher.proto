@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+message DownloadFileRequest{
+    string nombre = 1;
+}
+
+message DataChunkResponse{
+    bytes data = 1;
+}
+
+service VideoService{
+    rpc downloadVideo (DownloadFileRequest) returns (stream DataChunkResponse);
+}
