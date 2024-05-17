@@ -4,6 +4,9 @@
         <TargetFramework>net8.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>5341ffaf-96c5-4dd3-9a09-c2a65649ed0f</UserSecretsId>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <DockerfileContext>.</DockerfileContext>
     </PropertyGroup>
     <ItemGroup>
         <Protobuf Include="Protos/mediaSpiderWatcher.proto" GrpcServices="Server" />
@@ -12,6 +15,7 @@
         <PackageReference Include="Google.Protobuf" Version="3.26.1" />
         <PackageReference Include="Grpc.AspNetCore" Version="2.62.0" />
         <PackageReference Include="Microsoft.Azure.Storage.Blob" Version="11.2.3" />
+        <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.6" />
     </ItemGroup>
 
 </Project>
